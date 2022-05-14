@@ -45,11 +45,11 @@ module.exports = {
     new ImageMinimizerPlugin({
       minimizer: {
         implementation: ImageMinimizerPlugin.imageminMinify,
-        plugins: [
-          ["gifsicle", { interlaced: true }],
-          ["jpegtran", { progressive: true }],
-          ["optipng", { optimizationLevel: 5 }],
-        ],
+        // plugins: [
+        //   ["gifsicle", { interlaced: true }],
+        //   ["jpegtran", { progressive: true }],
+        //   ["optipng", { optimizationLevel: 5 }],
+        // ],
       },
     }),
     new CleanWebpackPlugin(),
